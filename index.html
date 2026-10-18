@@ -679,30 +679,38 @@ const BIBLE_BOOKS = [
   { id: 66, name: "Rivelazione", abbr: "Riv", ch: 22, sec: "NT", cat: 4 }
 ];
 
+// Elenco reale e verificato di tutte le Bibbie supportate nativamente da GetBible v2
 const CORE_BIBLES = [
   { id: "gb:riveduta", name: "🇮🇹 Italiano: Riveduta 1927 (Luzzi)", lang: "Italian" },
   { id: "gb:giovanni", name: "🇮🇹 Italiano: Giovanni Diodati (1649)", lang: "Italian" },
   { id: "gb:kjv", name: "🇬🇧 English: King James Version (KJV)", lang: "English" },
+  { id: "gb:akjv", name: "🇬🇧 English: Authorized King James (AKJV)", lang: "English" },
   { id: "gb:web", name: "🇬🇧 English: World English Bible (WEB)", lang: "English" },
-  { id: "gb:asv", name: "🇬🇧 English: American Standard (ASV)", lang: "English" },
-  { id: "gb:ylt", name: "🇬🇧 English: Young's Literal (YLT)", lang: "English" },
-  { id: "gb:bbe", name: "🇬🇧 English: Basic English (BBE)", lang: "English" },
+  { id: "gb:asv", name: "🇬🇧 English: American Standard (ASV 1901)", lang: "English" },
+  { id: "gb:ylt", name: "🇬🇧 English: Young's Literal Translation (YLT)", lang: "English" },
+  { id: "gb:bbe", name: "🇬🇧 English: Bible in Basic English (BBE)", lang: "English" },
   { id: "gb:darby", name: "🇬🇧 English: Darby Translation", lang: "English" },
+  { id: "gb:douayrheims", name: "🇬🇧 English: Douay-Rheims", lang: "English" },
+  { id: "gb:wb", name: "🇬🇧 English: Webster's Bible (1833)", lang: "English" },
   { id: "gb:valera", name: "🇪🇸 Español: Reina Valera (1909)", lang: "Spanish" },
-  { id: "gb:sagradas", name: "🇪🇸 Español: Sagradas Escrituras", lang: "Spanish" },
+  { id: "gb:sagradas", name: "🇪🇸 Español: Sagradas Escrituras (1569)", lang: "Spanish" },
+  { id: "gb:rvg", name: "🇪🇸 Español: Reina Valera Gómez", lang: "Spanish" },
   { id: "gb:luther1912", name: "🇩🇪 Deutsch: Lutherbibel (1912)", lang: "German" },
+  { id: "gb:luther1545", name: "🇩🇪 Deutsch: Lutherbibel (1545)", lang: "German" },
   { id: "gb:schlachter", name: "🇩🇪 Deutsch: Schlachter (1951)", lang: "German" },
   { id: "gb:elberfelder", name: "🇩🇪 Deutsch: Elberfelder (1871)", lang: "German" },
-  { id: "gb:luther1545", name: "🇩🇪 Deutsch: Luther (1545)", lang: "German" },
+  { id: "gb:elberfelder1905", name: "🇩🇪 Deutsch: Elberfelder (1905)", lang: "German" },
   { id: "gb:ls1910", name: "🇫🇷 Français: Louis Segond (1910)", lang: "French" },
   { id: "gb:martin", name: "🇫🇷 Français: David Martin (1744)", lang: "French" },
-  { id: "gb:ostervald", name: "🇫🇷 Français: Ostervald", lang: "French" },
+  { id: "gb:ostervald", name: "🇫🇷 Français: Ostervald (1996)", lang: "French" },
   { id: "gb:almeida", name: "🇧🇷 Português: João Ferreira de Almeida", lang: "Portuguese" },
   { id: "gb:synodal", name: "🇷🇺 Русский: Synodal Translation", lang: "Russian" },
+  { id: "gb:makarij", name: "🇷🇺 Русский: Pentateuco di Makarij", lang: "Russian" },
   { id: "gb:cornilescu", name: "🇷🇴 Română: Dumitru Cornilescu", lang: "Romanian" },
   { id: "gb:statenvertaling", name: "🇳🇱 Nederlands: Statenvertaling", lang: "Dutch" },
   { id: "gb:svd", name: "🇸🇦 العربية: Smith & Van Dyke", lang: "Arabic" },
   { id: "gb:cns", name: "🇨🇳 中文: Chinese Union Simplified", lang: "Chinese" },
+  { id: "gb:cnt", name: "🇹🇼 中文: Chinese Union Traditional", lang: "Chinese" },
   { id: "gb:korean", name: "🇰🇷 한국어: Korean Revised Version", lang: "Korean" },
   { id: "gb:kougo", name: "🇯🇵 日本語: Kougo-yaku", lang: "Japanese" },
   { id: "gb:vulgate", name: "🏛️ Latina: Biblia Sacra Vulgata", lang: "Latin" },
@@ -711,8 +719,23 @@ const CORE_BIBLES = [
   { id: "gb:lxx", name: "📜 Greco AT: Settanta (LXX)", lang: "Greek" },
   { id: "gb:tischendorf", name: "📜 Greco NT: Tischendorf 8th", lang: "Greek" },
   { id: "gb:westcott", name: "📜 Greco NT: Westcott-Hort", lang: "Greek" },
+  { id: "gb:byzantine", name: "📜 Greco NT: Testo Bizantino Maggioritario", lang: "Greek" },
   { id: "gb:wlc", name: "📜 Ebraico AT: Westminster Leningrad (WLC)", lang: "Hebrew" },
-  { id: "gb:aleppo", name: "📜 Ebraico AT: Aleppo Codex", lang: "Hebrew" }
+  { id: "gb:aleppo", name: "📜 Ebraico AT: Aleppo Codex", lang: "Hebrew" },
+  { id: "gb:peshitta", name: "📜 Aramaico/Siriaco: Peshitta", lang: "Syriac" },
+  { id: "gb:ukrainian", name: "🇺🇦 Українська: Bibbia Ucraina (Ogienko)", lang: "Ukrainian" },
+  { id: "gb:bulgarian", name: "🇧🇬 Български: Bibbia Bulgara (1940)", lang: "Bulgarian" },
+  { id: "gb:hungarian", name: "🇭🇺 Magyar: Károli Gáspár", lang: "Hungarian" },
+  { id: "gb:polish", name: "🇵🇱 Polski: Biblia Gdańska", lang: "Polish" },
+  { id: "gb:czech", name: "🇨🇿 Čeština: Bible Kralická", lang: "Czech" },
+  { id: "gb:swedish", name: "🇸🇪 Svenska: Karl XII (1917)", lang: "Swedish" },
+  { id: "gb:finnish", name: "🇫🇮 Suomi: Pyhä Raamattu", lang: "Finnish" },
+  { id: "gb:danish", name: "🇩🇰 Dansk: Bibelen på Dansk", lang: "Danish" },
+  { id: "gb:norwegian", name: "🇳🇴 Norsk: Det Norsk Bibelselskap", lang: "Norwegian" },
+  { id: "gb:turkish", name: "🇹🇷 Türkçe: Kutsal Kitap", lang: "Turkish" },
+  { id: "gb:swahili", name: "🇰🇪 Kiswahili: Biblia Takatifu", lang: "Swahili" },
+  { id: "gb:tagalog", name: "🇵🇭 Tagalog: Ang Dating Biblia", lang: "Tagalog" },
+  { id: "gb:vietnamese", name: "🇻🇳 Tiếng Việt: Bibbia Vietnamita (1934)", lang: "Vietnamese" }
 ];
 
 const PRO_STRONG_DICT = {
@@ -744,11 +767,8 @@ const PRO_CROSS_REFS = {
     let dynamicCatalog = [...CORE_BIBLES];
 let catalogLoaded = false;
 
-const DEFAULT_ACTIVE_IDS = [
-  "gb:riveduta", "gb:giovanni", "gb:kjv", "gb:web", "gb:valera",
-  "gb:luther1912", "gb:schlachter", "gb:ls1910", "gb:almeida",
-  "gb:vulgate", "gb:textusreceptus", "gb:wlc"
-];
+// Attiva immediatamente tutte le Bibbie reali nel menu a tendina
+const DEFAULT_ACTIVE_IDS = CORE_BIBLES.map(b => b.id);
 
 let state = {
   bookId: 1,
@@ -763,7 +783,7 @@ let state = {
   selectedVerse: null,
   selectedVerseText: "",
   activeTagFilter: null,
-  downloadedBibles: JSON.parse(localStorage.getItem("bm_v10_bibles") || JSON.stringify(DEFAULT_ACTIVE_IDS)),
+  downloadedBibles: JSON.parse(localStorage.getItem("bm_v10_pro_bibles") || JSON.stringify(DEFAULT_ACTIVE_IDS)),
   highlights: JSON.parse(localStorage.getItem("bm_hl") || "{}"),
   bookmarks: JSON.parse(localStorage.getItem("bm_bm") || "[]"),
   notes: JSON.parse(localStorage.getItem("bm_notes") || "[]")
@@ -849,7 +869,7 @@ async function populateSelects() {
   let activeList = dynamicCatalog.filter(b => state.downloadedBibles.includes(b.id));
   if (activeList.length < 2) {
     state.downloadedBibles = [...DEFAULT_ACTIVE_IDS];
-    localStorage.setItem("bm_v10_bibles", JSON.stringify(state.downloadedBibles));
+    localStorage.setItem("bm_v10_pro_bibles", JSON.stringify(state.downloadedBibles));
     activeList = dynamicCatalog.filter(b => state.downloadedBibles.includes(b.id));
   }
 
